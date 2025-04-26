@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 function App() {
   useEffect(() => {
     // Update the document title
-    document.title = 'Joris & Juliette | Wedding - May 29, 2026';
+    document.title = 'Juliette & Joris | Mariage Mai 2026';
     
     // Find the element with the data-default attribute and remove it
     const defaultTitle = document.querySelector('[data-default]');

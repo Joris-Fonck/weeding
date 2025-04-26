@@ -2,29 +2,30 @@ import { DaySchedule } from '@/types';
 
 export const SCHEDULE: DaySchedule[] = [
   {
-    day: 'Day 1',
-    date: 'May 28, 2026',
+    day: 'Jour 1',
+    date: '28 mai 2026',
     events: [
-      { time: '16:00', title: 'Civil Ceremony at the Citytown' },
-      { time: '18:00', title: 'Welcome Gathering at the Castle' },
+      { time: '16:00', title: 'Ceremonie civil à la mairie de St-Erblon', id: 'mairie' },
+      { time: '18:00', title: 'Welcome Gathering at the Castle', id: 'chateau' },
     ],
   },
   {
-    day: 'Day 2',
-    date: 'May 29, 2026',
+    day: 'Jour 2',
+    date: '29 mai 2026',
     events: [
-      { time: '16:00', title: 'Laic Ceremony' },
-      { time: '17:00', title: 'Group Photo Session' },
-      { time: '18:00', title: 'Cocktail Reception' },
-      { time: '21:00', title: 'Wedding Dinner' },
-      { time: '23:30', title: 'Dance Party' },
+      { time: '16:00', title: 'Ceremonie laïc', id: 'ceremonie' },
+      { time: '17:00', title: 'Session photo', id: 'photo' },
+      { time: '18:00', title: 'Vin d\'honneur', id: 'vin' },
+      { time: '21:00', title: 'Diner à table', id: 'diner' },
+      { time: '23:30', title: 'Soirée dansante', id: 'soiree' },
     ],
   },
   {
-    day: 'Day 3',
-    date: 'May 30, 2026',
+    day: 'Jour 3',
+    date: '30 mai 2026',
     events: [
-      { time: '12:00', title: 'Farewell Brunch' },
+      { time: '12:00', title: 'Brunch', id: 'brunch' },
+      { time: 'Quand vous voulez', title: 'Départ', id: 'depart' },
     ],
   },
 ];
