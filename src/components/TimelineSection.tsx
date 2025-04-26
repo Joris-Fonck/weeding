@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { SCHEDULE } from '@/lib/constants';
+import { getFilteredSchedule } from '@/lib/utils';
 import { motion, useInView } from 'framer-motion';
 
 import Alliance from '../assets/alliance.png'
@@ -28,20 +28,8 @@ const getEventIcon = (id: string) => {
 const TimelineSection: React.FC = () => {
   return (
     <section className="py-16 md:py-24 max-w-4xl mx-auto px-4">
-      <motion.div
-        className="mb-16 text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <h2 className="text-3xl md:text-4xl font-serif mb-3 text-[#414042]">Notre mariage</h2>
-        <p className="text-[#414042]/80 max-w-xl mx-auto">
-          Nous sommes ravis de partager ces moments précieux avec vous. Voici ce que nous avons prévu pour notre mariage.
-        </p>
-      </motion.div>
-
       <div className="space-y-16">
-        {SCHEDULE.map((day, dayIndex) => (
+        {getFilteredSchedule().map((day, dayIndex) => (
           <div key={dayIndex} className="relative">
             <motion.div
               className="mb-12 text-center"
@@ -49,8 +37,7 @@ const TimelineSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h3 className="text-2xl font-serif text-[#414042] mb-1">{day.day}</h3>
-              <p className="text-sm text-[#414042]/70">{day.date}</p>
+              <h3 className="text-3xl font-serif text-[#414042] mb-1">{day.date}</h3>
             </motion.div>
 
             <div className="relative">
@@ -71,16 +58,15 @@ const TimelineSection: React.FC = () => {
                       className="relative flex items-center"
                       initial={{ 
                         opacity: 0,
-                        x: isLeft ? -50 : 50
+                        x: isLeft ? -75 : 75
                       }}
                       animate={{ 
                         opacity: isInView ? 1 : 0,
-                        x: isInView ? 0 : (isLeft ? -50 : 50)
+                        x: isInView ? 0 : (isLeft ? -75 : 75)
                       }}
                       transition={{ 
-                        duration: 0.8,
-                        delay: 0.1 * eventIndex,
-                        ease: [0.22, 1, 0.36, 1]
+                        duration: 1,
+                        delay: 0.15 * eventIndex,
                       }}
                     >
                       {/* Empty space for visual balance */}
