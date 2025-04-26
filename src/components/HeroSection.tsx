@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <div className="h-[1px] w-12 md:w-24 bg-[#414042] opacity-60"></div>
-          <p className="text-xl md:text-2xl font-light text-[#414042]">May 29, 2026</p>
+          <p className="text-xl md:text-2xl font-light text-[#414042]">29, 30 & 31 mai 2026</p>
           <div className="h-[1px] w-12 md:w-24 bg-[#414042] opacity-60"></div>
         </motion.div>
       </motion.div>
