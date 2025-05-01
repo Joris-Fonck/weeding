@@ -61,8 +61,9 @@ const HeroSection: React.FC = () => {
         transition={{ duration: 0.8 , delay: baseDelay + 1 }}
       >
         <h2 className="text-3xl md:text-4xl font-serif mb-3 text-[#414042]">Notre mariage</h2>
-        <p className="text-[#414042]/80 max-w-xl mx-auto">
-          Nous sommes ravis de partager ces moments précieux avec vous. Voici ce que nous avons prévu pour notre mariage.
+        <p className="text-[#414042]/80 max-w-xl mx-4">
+          Nous sommes ravis de partager ces moments précieux avec vous. Cliquez sur les boutons ci-dessous pour 
+          connaitre les informations nécessaire pour notre mariage.
         </p>
       </motion.div>
     </section>

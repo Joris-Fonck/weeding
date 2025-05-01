@@ -8,6 +8,18 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
+ * Creates a URL with preserved search parameters
+ * @param path - The target route path
+ * @returns A URL string with preserved search parameters
+ */
+export function createUrlWithParams(path: string): string {
+  const currentParams = new URLSearchParams(window.location.search);
+  const hasParams = Array.from(currentParams.keys()).length > 0;
+  
+  return hasParams ? `${path}?${currentParams.toString()}` : path;
+}
+
+/**
  * Filters the schedule based on the "days" URL parameter.
  * @param url - The URL containing the "days" parameter.
  * @returns A filtered schedule.
