@@ -9,7 +9,7 @@ const baseDelay = 0.3
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="h-screen flex flex-col items-center pt-48 md:pt-80">
+    <section className="h-dvh flex flex-col items-center pt-48 md:pt-80">
       <motion.div
         className="absolute top-0 left-0 right-0"
         initial={{ opacity: 0, y: -100 }}

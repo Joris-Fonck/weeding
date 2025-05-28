@@ -57,7 +57,7 @@ const Apartment = () => {
                 transition: `all 1.5s ease-out ${index * 0.2}s`
               }}
             >
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
                 <div className="aspect-[5/3] relative">
                   <img
                     src={apartment.image}
@@ -65,15 +65,17 @@ const Apartment = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl font-serif text-[#414042]">
-                    {apartment.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-[#414042]/80 mb-2">{apartment.address}</p>
-                  <p className="text-[#414042]/80 font-medium">{apartment.phone}</p>
-                </CardContent>
+                <div className="flex flex-col flex-1">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-serif text-[#414042]">
+                      {apartment.name}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="mt-auto">
+                    <p className="text-[#414042]/80 mb-2">{apartment.address}</p>
+                    <p className="text-[#414042]/80 font-medium">{apartment.phone}</p>
+                  </CardContent>
+                </div>
               </Card>
             </motion.div>
           );

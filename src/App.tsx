@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import TimelineSection from '@/components/TimelineSection';
 import Navigation from '@/components/Navigation';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-[#f4f4f5] text-[#414042]">
+      <div className="min-h-dvh bg-[#f4f4f5] text-[#414042]">
         <main className="container mx-auto">
           <HeroSection />
           <Navigation />
