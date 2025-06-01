@@ -4,7 +4,7 @@ export const SCHEDULE: DaySchedule[] = [
   {
     date: '29 mai 2026',
     events: [
-      { time: '16:00', title: 'Cérémonie civil à la mairie de St-Erblon', id: 'mairie' },
+      { time: '16:00', title: 'Cérémonie civile à la mairie de St-Erblon', id: 'mairie' },
       { time: '18:00', title: 'Soirée au calme', id: 'chateau' },
     ],
   },
