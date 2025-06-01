@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-svh bg-[#f4f4f5] text-[#414042]">
+      <div className="min-h-screen-support bg-[#f4f4f5] text-[#414042]">
         <main className="container mx-auto">
           <HeroSection />
           <Navigation />

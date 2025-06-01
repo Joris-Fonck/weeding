@@ -12,7 +12,7 @@ const Navigation = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Link 
+      <Link
         to={createUrlWithParams('/')} 
         className={`text-lg relative group ${
           location.pathname === '/' ? 'text-[#414042]' : 'text-[#414042]/70'
@@ -23,7 +23,7 @@ const Navigation = () => {
           location.pathname === '/' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
         }`} />
       </Link>
-      <Link 
+      <Link
         to={createUrlWithParams('/apartment')} 
         className={`text-lg relative group ${
           location.pathname === '/apartment' ? 'text-[#414042]' : 'text-[#414042]/70'

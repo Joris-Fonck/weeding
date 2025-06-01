@@ -19,7 +19,6 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -103,4 +102,24 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
+}
+
+.h-screen-support {
+  height: 100vh; /* valeur par défaut */
+}
+
+@supports (height: 100svh) {
+  .h-screen-support {
+    height: 100svh;
+  }
+}
+
+.min-h-screen-support {
+  min-height: 100vh; /* valeur par défaut */
+}
+
+@supports (min-height: 100svh) {
+  .min-h-screen-support {
+    min-height: 100svh;
+  }
 }
