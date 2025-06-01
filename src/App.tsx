@@ -4,9 +4,10 @@ import HeroSection from '@/components/HeroSection';
 import TimelineSection from '@/components/TimelineSection';
 import Navigation from '@/components/Navigation';
 import Apartment from '@/components/Apartment';
+import Other from '@/components/Other';
 import Footer from '@/components/Footer';
-
-function App() {
+ 
+function App() { 
   useEffect(() => {
     document.title = 'Juliette & Joris | Mariage Mai 2026';
     
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<TimelineSection />} />
             <Route path="/apartment" element={<Apartment />} />
+            <Route path="/other" element={<Other />} />
           </Routes>
           <Footer />
         </main>

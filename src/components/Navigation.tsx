@@ -24,7 +24,7 @@ const Navigation = () => {
         }`} />
       </Link>
       <Link
-        to={createUrlWithParams('/apartment')} 
+        to={createUrlWithParams('/apartment')}
         className={`text-lg relative group ${
           location.pathname === '/apartment' ? 'text-[#414042]' : 'text-[#414042]/70'
         }`}
@@ -32,6 +32,17 @@ const Navigation = () => {
         Les logements
         <span className={`absolute left-0 bottom-0 w-full h-[1px] bg-[#414042] transform origin-left transition-transform duration-300 ease-out ${
           location.pathname === '/apartment' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+        }`} />
+      </Link>
+      <Link
+        to={createUrlWithParams('/other')}
+        className={`text-lg relative group ${
+          location.pathname === '/other' ? 'text-[#414042]' : 'text-[#414042]/70'
+        }`}
+      >
+        Autre
+        <span className={`absolute left-0 bottom-0 w-full h-[1px] bg-[#414042] transform origin-left transition-transform duration-300 ease-out ${
+          location.pathname === '/other' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
         }`} />
       </Link>
     </motion.nav>
