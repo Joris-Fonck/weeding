@@ -12,7 +12,7 @@ const Other = () => {
         Autres informations
       </h2>
 
-      <ul className="sans-serif">
+      <ul className="sans-serif text-[#414042]/80">
         Voici quelques informations complémentaires pour que cette journée soit la plus agréable possible pour nous tous :
 
         <div className="mt-12 flex flex-col items-center gap-4">
