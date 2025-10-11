@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { getFilteredDates } from '@/lib/utils';
 
-import Header from '../assets/header.webp';
 import Flower from '../assets/flower.webp';
 
 const baseDelay = 0.3
@@ -10,14 +9,6 @@ const baseDelay = 0.3
 const HeroSection: React.FC = () => {
   return (
     <section className="h-screen-support flex flex-col items-center pt-48 md:pt-80">
-      <motion.div
-        className="absolute top-0 left-0 right-0"
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.8, delay: baseDelay + 0.5 }}
-      >
-        <img src={Header} className="w-full object-cover" alt="Background" />
-      </motion.div>
       <motion.div
         className="text-center mb-auto"
         initial={{ opacity: 0, y: 20 }}
