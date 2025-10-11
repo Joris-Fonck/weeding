@@ -33,7 +33,7 @@ async function initializeFirebase() {
       // Utilisation du fichier local en développement
       const keyPath = path.join(__dirname, 'serviceAccountKey.json');
       serviceAccount = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
-      console.log('Firebase initialisé avec la clé locale.');
+      console.log('Firebase initialisé avec la clé locale');
     }
     if (!admin.apps.length) {
       admin.initializeApp({
