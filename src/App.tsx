@@ -6,6 +6,8 @@ import Navigation from '@/components/Navigation';
 import Apartment from '@/components/Apartment';
 import Other from '@/components/Other';
 import Footer from '@/components/Footer';
+
+import Record from './components/Record';
  
 function App() { 
   useEffect(() => {
@@ -27,6 +29,7 @@ function App() {
             <Route path="/" element={<TimelineSection />} />
             <Route path="/apartment" element={<Apartment />} />
             <Route path="/other" element={<Other />} />
+            <Route path="/record" element={<Record />} />
           </Routes>
           <Footer />
         </main>
