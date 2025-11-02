@@ -61,7 +61,7 @@ app.use(async (req, res, next) => {
   next();
 });
 
-app.post('/api/upload-voice', upload.single('audio'), async (req, res) => {
+app.post('/upload-voice', upload.single('audio'), async (req, res) => {
   try {
     // Autoriser uniquement le 30 et 31 mai 2026
     const now = new Date();
